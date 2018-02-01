@@ -1,0 +1,43 @@
+$space-large: 2.5rem;
+$dark: #2f3542;
+$white: #ffffff;
+$grayLight: #f1f2f6;
+$blueFlat: #70a1ff;
+
+.navbar-background {
+  background: $blueFlat;
+  ul {
+    li {
+      background: $blueFlat;
+      a {
+        color: $white;
+      }
+      .active {
+        color: $white;
+      }
+      &.menu-text {
+        color: $white;
+      }
+    }
+  }
+}
+
+.navbar-search {
+  .button {
+    background: $grayLight;
+    color: $dark;
+    &:hover {
+      background: darken($grayLight, 10%);
+    }
+  }
+}
+
+.page-title {
+  margin-top: $space-large;
+  margin-bottom: $space-large;
+  color: $dark;
+}
+
+input[type=search] {
+  box-shadow: none;
+}
