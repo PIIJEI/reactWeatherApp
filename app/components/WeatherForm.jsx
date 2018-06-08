@@ -1,4 +1,5 @@
 var React = require('react');
+var SelectWeather = require('SelectWeather');
 
 
 var WeatherForm = React.createClass({
@@ -14,11 +15,14 @@ var WeatherForm = React.createClass({
   },
   render: function() {
     return (
-      <div>
-        <form onSubmit={this.onFormSubmit}>
-          <input type="search" ref="location" placeholder="Search weather by city..."/>
-          <button className="button hollow expanded">Get Weather</button>
-        </form>
+      <div className="wrapperCol" onLoad={this.onFormSubmit}>
+        <div classNam="leftCol">
+          <form onSubmit={this.onFormSubmit}>
+            <input type="search" ref="location" placeholder="Search weather by city..."/>
+            <button className="button hollow expanded">Get Weather</button>
+          </form>
+        </div>
+        <SelectWeather/>
       </div>
     );
   }
