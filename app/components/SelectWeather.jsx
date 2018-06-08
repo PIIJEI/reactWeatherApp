@@ -17,11 +17,10 @@ class SelectWeather extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     //return this.state + value
-
     if(this.state.value === 'default') {
-      console.log('Please select the city...')
+      console.log('Please select the city...');
     } else {
-      return console.log(this.state.value);
+      return console.log('There is ' + 'X' + ' degree in ' + this.state.value);
     }
   }
 
@@ -37,7 +36,7 @@ class SelectWeather extends React.Component {
             <option value='Amsterdam'>Amsterdam, NL</option>
             <option value='Paris'>Paris, FR</option>
           </select>
-          <button className="button hollow expanded">Show Weather</button>
+          <button className="button hollow expanded">Show Weather <span>for {this.state.value}</span></button>
         </form>
       </div>
     );
