@@ -26,12 +26,12 @@ module.exports = {
       Nav: 'app/components/Nav.jsx',
       Weather: 'app/components/Weather.jsx',
       WeatherForm: 'app/components/WeatherForm.jsx',
+      SelectWeather: 'app/components/SelectWeather.jsx',
       WeatherMessage: 'app/components/WeatherMessage.jsx',
       About: 'app/components/About.jsx',
       Examples: 'app/components/Examples.jsx',
       openWeatherMap: 'app/api/openWeatherMap.jsx',
       ErrorModal: 'app/components/ErrorModal.jsx',
-      SelectWeather: 'app/components/SelectWeather.jsx',
       applicationStyles: 'app/styles/app.scss'
     },
     extensions: ['','.js','.jsx']
